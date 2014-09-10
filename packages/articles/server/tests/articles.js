@@ -42,7 +42,7 @@ describe('<Unit Test>', function() {
       it('should be able to save without problems', function(done) {
         return article.save(function(err) {
           should.not.exist(err);
-          article.title.should.equal('Article Title');
+          article.title.should.equal('Article Title 1');
           article.content.should.equal('Article Content');
           article.user.should.not.have.length(0);
           article.created.should.not.have.length(0);
